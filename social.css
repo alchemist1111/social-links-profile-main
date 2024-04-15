@@ -1,3 +1,107 @@
+* {
+  margin: 0;
+}
+
+
 body {
+  background-color: hsl(0, 0%, 4%);
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto; 
+  /* height: auto; */
+  font-size: 11px;
+  box-sizing: border-box;
+}
+
+.container-items {
+  background-color: hsl(0, 0%, 8%); 
+ width: 300px;
+ border-radius: 10px;
+ margin: 8px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+  transition: 1s linear;
+}
+
+.profile-picture:hover{
+  transform: scale(1.2);
+}
+
+ h3, p {
+  color: hsl(0, 0%, 100%);
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+
+h5 {
+  color: hsl(75, 94%, 57%);
+  padding: 10px 10px;
+  margin: 1px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+p {
+  margin: 10px;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+h4 {
+  margin: 15px 30px 15px 30px;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 10px;
+  outline: none;
   background-color: hsl(0, 0%, 12%);
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+h4:hover {
+  color: rgb(185, 38, 38);
+}
+
+h5:hover {
+  color: hsl(241, 85%, 47%);
+}
+
+h3:hover, p:hover {
+  color: rgb(185, 38, 38);
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
